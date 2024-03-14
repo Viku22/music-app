@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/142aa421f7.js" crossorigin="anonymous">
+
+    </script>
+</head>
+<body>
+    <div id="music-player" class="player">
+        <div class="main">
+            <p class="brand">developed by
+                <a href="https://in.linkedin.com/in/vikas-maurya-069936275" target="_blank">vikas maurya 🩷</a>
+            </p>
+        </div>
+        <div id="now-playing">
+            <img id="cover-art" src="images/song-img 3.webp" alt="Album Cover">
+            <h2 id="track-title">Gullab</h2>
+            <h3 id="artist-name">Akhil</h3>
+        </div>
+        <audio id="audio" >
+            <source src="music/song 1.mp3" type="audio/mpeg">
+            
+        </audio>
+         
+        <input type="range" value="0" id="progress">
+      
+        <div id="controls">
+            <button onclick="prevTrack()"><i class="fa-solid fa-backward"></i></button>
+            <button onclick="playPause()"> <i class="fa-solid fa-play " id="ctrlIcon"></i></button>
+            <button onclick="nextTrack()"><i class="fa-solid fa-forward"></i></button>
+        </div>
+    </div>
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
